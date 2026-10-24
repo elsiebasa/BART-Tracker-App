@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+  <title>BART Live Departure Board</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 min-h-screen text-slate-100 p-4 sm:p-6 flex flex-col items-center">
+  <main class="w-full max-w-2xl mt-6">
+    <header class="mb-8 text-center">
+      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+        BART Live Departure Board
+      </h1>
+      <p class="text-sm text-slate-400 mt-2">
+        Data refreshes when the scheduled pipeline succeeds.
+        Last BART update: <span id="update-time" class="text-slate-200 font-mono">Loading...</span>
+      </p>
+      <p id="refresh-status" class="text-xs text-slate-500 mt-1" aria-live="polite">Loading departure data…</p>
+    </header>
+
+    <section class="bg-slate-800 p-5 rounded-2xl border border-slate-700 shadow-xl mb-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div>
+        <label for="station-picker" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Select Station</label>
+        <select id="station-picker" class="w-full bg-slate-900 border border-slate-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 font-medium">
+          <option value="">Loading stations…</option>
+        </select>
+      </div>
+      <div>
+        <label for="direction-picker" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Direction</label>
+        <select id="direction-picker" class="w-full bg-slate-900 border border-slate-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 font-medium">
+          <option value="ALL">All Directions</option>
+          <option value="North">Northbound</option>
+          <option value="South">Southbound</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="train-container" class="space-y-4" aria-live="polite">
+      <div class="text-center py-12 text-slate-500">Loading train estimates…</div>
+    </section>
+
+    <footer class="text-center text-xs text-slate-500 mt-8">
+      Departure estimates are provided by BART. Times may change.
+      <a class="underline hover:text-slate-300" href="https://www.bart.gov/schedules/developers/api" target="_blank" rel="noreferrer">BART API information</a>
+    </footer>
+  </main>
+
+  <script>
+    "use strict";
+
+    let db = { metadata: {}, stations: [], trains: [] };
+    const stationPicker = document.getElementById("station-picker");
+    const directionPicker = document.getElementById("direction-picker");
+    const trainContainer = document.getElementById("train-container");
+    const updateTimeLabel = document.getElementById("update-time");
+    const refreshStatus = document.getElementById("refresh-status");
+
+    function addText(parent, tag, text, className = "") {
+      const element = document.createElement(tag);
+      element.textContent = String(text ?? "");
+      if (className) element.className = className;
+      parent.appendChild(element);
+      return element;
+    }
+
+    async function initData() {
+      try {
+        const response = await fetch(`./bart_data.json?t=${Date.now()}`, {
+          cache: "no-store"
+        });
+        if (!response.ok) throw new Error(`Data request failed (HTTP ${response.status})`);
+
+        const nextDb = await response.json();
+        if (!Array.isArray(nextDb.stations) || !Array.isArray(nextDb.trains)) {
+          throw new Error("The JSON file has an unexpected structure.");
+        }
+
+        const previousStation = stationPicker.value;
+        db = nextDb;
+        updateTimeLabel.textContent = db.metadata?.last_updated ?? "Unknown";
+
+        stationPicker.replaceChildren();
+        db.stations.forEach(station => {
+          const option = document.createElement("option");
+          option.value = station.code;
+          option.textContent = station.name;
+          stationPicker.appendChild(option);
+        });
+
+        if (db.stations.some(s => s.code === previousStation)) {
+          stationPicker.value = previousStation;
+        } else if (db.stations.some(s => s.code === "EMBR")) {
+          stationPicker.value = "EMBR";
+        }
+
+        renderDashboard();
+        refreshStatus.textContent = `Page checked at ${new Date().toLocaleTimeString()}`;
+      } catch (error) {
+        console.error("Unable to load BART data:", error);
+        refreshStatus.textContent = "Could not refresh data; showing the last loaded data if available.";
+        if (!db.stations.length) {
+          trainContainer.replaceChildren();
+          addText(
+            trainContainer, "p",
+            "Unable to load BART data. The data file may not have been published yet.",
+            "text-center text-red-300 p-5 bg-red-950/40 rounded-xl border border-red-800"
+          );
+        }
+      }
+    }
+
+    function renderDashboard() {
+      const selectedStation = stationPicker.value;
+      const selectedDirection = directionPicker.value;
+      const trains = db.trains.filter(train =>
+        train.origin_code === selectedStation &&
+        (selectedDirection === "ALL" || train.direction === selectedDirection)
+      );
+
+      trainContainer.replaceChildren();
+
+      if (!trains.length) {
+        addText(
+          trainContainer, "div",
+          "No departure estimates are currently available for this selection.",
+          "text-center py-12 bg-slate-800/40 border border-dashed border-slate-700 rounded-2xl text-slate-400"
+        );
+        return;
+      }
+
+      trains.forEach(train => {
+        const card = document.createElement("article");
+        card.className = "bg-slate-800 rounded-xl p-5 border border-slate-700 shadow-lg flex justify-between items-center gap-4";
+
+        const details = document.createElement("div");
+        details.className = "min-w-0";
+        const heading = document.createElement("div");
+        heading.className = "flex items-center gap-2 mb-1";
+
+        const dot = document.createElement("span");
+        dot.className = "w-3 h-3 rounded-full shrink-0";
+        dot.style.backgroundColor = /^#[0-9a-f]{6}$/i.test(train.color || "") ? train.color : "#64748b";
+        heading.appendChild(dot);
+        addText(heading, "h3", train.destination || "Unknown destination", "text-lg sm:text-xl font-bold text-white");
+        details.appendChild(heading);
+
+        addText(
+          details, "p",
+          `Platform ${train.platform} • ${train.length}-car train • ${train.direction}bound`,
+          "text-xs text-slate-400"
+        );
+
+        const arrival = document.createElement("div");
+        arrival.className = "text-right shrink-0";
+        const leaving = train.minutes === "Leaving";
+        addText(
+          arrival, "span",
+          leaving ? "Leaving now" : `${train.minutes} min`,
+          `inline-block px-3 py-2 rounded-lg font-bold text-sm ${leaving ? "bg-emerald-500 text-white" : "bg-slate-700 text-slate-200"}`
+        );
+
+        card.append(details, arrival);
+        trainContainer.appendChild(card);
+      });
+    }
+
+    stationPicker.addEventListener("change", renderDashboard);
+    directionPicker.addEventListener("change", renderDashboard);
+    initData();
+    // The browser checks for a newly deployed JSON file every minute.
+    setInterval(initData, 60_000);
+  </script>
+</body>
+</html>
