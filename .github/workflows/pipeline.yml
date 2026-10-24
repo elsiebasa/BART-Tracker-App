@@ -46,9 +46,9 @@ jobs:
 
       - name: Verify generated files
         run: |
-          test -s public/index.html
-          test -s public/bart_data.json
-          python -m json.tool public/bart_data.json > /dev/null
+          test -s index.html
+          test -s bart_data.json
+          python -m json.tool bart_data.json > /dev/null
 
       - name: Deploy website
         uses: peaceiris/actions-gh-pages@v4
