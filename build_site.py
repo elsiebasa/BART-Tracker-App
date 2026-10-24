@@ -8,12 +8,13 @@ import requests
 API_URL = "https://api.bart.gov/api/etd.aspx"
 STATION_URL = "https://api.bart.gov/api/stn.aspx"
 BART_API_KEY = "MW9S-E7SL-26DU-VV8V"
+
 OUTPUT_FILE = Path("public/bart_data.json")
 SESSION = requests.Session()
 
 
 def as_list(value):
-    """Normalize BART fields that may be an object or a list."""
+    """Convert an API object or list into a list."""
     if value is None:
         return []
     if isinstance(value, list):
@@ -24,7 +25,7 @@ def as_list(value):
 
 
 def get_bart_data(url, params):
-    """Fetch and validate a BART API JSON response."""
+    """Fetch data from BART and handle API warnings."""
     response = SESSION.get(url, params=params, timeout=30)
     response.raise_for_status()
 
@@ -32,29 +33,34 @@ def get_bart_data(url, params):
         payload = response.json()
     except ValueError as exc:
         raise RuntimeError(
-            "BART returned a response that was not valid JSON."
+            "BART returned invalid JSON."
         ) from exc
+
+    if not isinstance(payload, dict):
+        raise RuntimeError("Unexpected BART API response.")
 
     root = payload.get("root")
 
     if not isinstance(root, dict):
         raise RuntimeError(
-            "BART response did not contain the expected root object."
+            "BART response did not contain a root object."
         )
 
     message = root.get("message")
 
     if message:
-        message_text = json.dumps(message, default=str).lower()
+        message_text = json.dumps(
+            message, default=str
+        ).lower()
 
-        # No current estimates for one station is not a fatal error.
+        # No estimates at one station should not stop the pipeline.
         if (
             params.get("cmd") == "etd"
             and "no data matched your criteria" in message_text
         ):
             print(
-                "[WARN] No departure estimates for station "
-                f"{params.get('orig', 'unknown')}; continuing."
+                f"[WARN] No estimates for "
+                f"{params.get('orig')}. Continuing."
             )
             return root
 
@@ -71,28 +77,35 @@ def pipeline_execution():
         "json": "y",
     }
 
-    # Fetch the complete station directory first.
+    # STEP 1: Retrieve the complete station directory.
     station_root = get_bart_data(
         STATION_URL,
-        {"cmd": "stns", **common_params},
+        {
+            "cmd": "stns",
+            **common_params,
+        },
     )
 
     stations_container = station_root.get("stations")
+
     if not isinstance(stations_container, dict):
         stations_container = {}
 
-    stations_raw = as_list(stations_container.get("station"))
+    stations_raw = as_list(
+        stations_container.get("station")
+    )
 
     if not stations_raw:
         raise RuntimeError(
             "BART returned no stations. "
-            "The station directory was not published."
+            "Check the station API response and API key."
         )
 
     station_directory = {}
     transformed_records = []
 
-    # Fetch departure estimates for each station.
+    # STEP 2: Keep every valid station in the directory.
+    # STEP 3: Fetch departure estimates for each station.
     for station in stations_raw:
         if not isinstance(station, dict):
             continue
@@ -103,7 +116,11 @@ def pipeline_execution():
         if not station_code or not station_name:
             continue
 
-        # Keep every valid station even when it has no trains.
+        station_code = str(station_code)
+        station_name = str(station_name)
+
+        # Add station BEFORE requesting its departure estimates.
+        # It remains selectable even if it has no current trains.
         station_directory[station_code] = station_name
 
         root = get_bart_data(
@@ -115,17 +132,25 @@ def pipeline_execution():
             },
         )
 
-        for station_result in as_list(root.get("station")):
+        for station_result in as_list(
+            root.get("station")
+        ):
             if not isinstance(station_result, dict):
                 continue
 
-            for etd in as_list(station_result.get("etd")):
+            for etd in as_list(
+                station_result.get("etd")
+            ):
                 if not isinstance(etd, dict):
                     continue
 
-                destination = etd.get("destination", "Unknown")
+                destination = etd.get(
+                    "destination", "Unknown"
+                )
 
-                for estimate in as_list(etd.get("estimate")):
+                for estimate in as_list(
+                    etd.get("estimate")
+                ):
                     if not isinstance(estimate, dict):
                         continue
 
@@ -134,47 +159,63 @@ def pipeline_execution():
                         "origin_name": station_name,
                         "destination": destination,
                         "minutes": str(
-                            estimate.get("minutes", "Unknown")
+                            estimate.get("minutes") or "Unknown"
                         ),
                         "direction": estimate.get(
                             "direction", "Unknown"
                         ),
-                        "platform": estimate.get("platform", "N/A"),
-                        "length": estimate.get("length", "N/A"),
+                        "platform": estimate.get(
+                            "platform", "N/A"
+                        ),
+                        "length": estimate.get(
+                            "length", "N/A"
+                        ),
                         "color": estimate.get(
                             "hexcolor", "#64748b"
                         ),
                     })
 
     if not station_directory:
-        raise RuntimeError("No valid BART stations were found.")
+        raise RuntimeError(
+            "No valid stations were found."
+        )
 
-    # Publish the station list even if no trains currently have estimates.
+    # STEP 4: Build the JSON data for your website.
+    # Publish stations even if there are zero departure estimates.
     output_payload = {
         "metadata": {
-            "last_updated": datetime.now(timezone.utc).strftime(
-                "%Y-%m-%d %H:%M:%S UTC"
-            ),
+            "last_updated": datetime.now(
+                timezone.utc
+            ).strftime("%Y-%m-%d %H:%M:%S UTC"),
             "total_records": len(transformed_records),
         },
         "stations": sorted(
             [
-                {"code": code, "name": name}
+                {
+                    "code": code,
+                    "name": name,
+                }
                 for code, name in station_directory.items()
             ],
-            key=lambda station: station["name"],
+            key=lambda station: station["name"].casefold(),
         ),
         "trains": transformed_records,
     }
 
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    # STEP 5: Write the JSON file into public/.
+    OUTPUT_FILE.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
 
-    # Write to a temporary file first to avoid partial JSON files.
+    # Write a temporary file first to avoid partial JSON.
     temp_file = OUTPUT_FILE.with_suffix(".tmp")
+
     temp_file.write_text(
         json.dumps(output_payload, indent=2),
         encoding="utf-8",
     )
+
     temp_file.replace(OUTPUT_FILE)
 
     print(
