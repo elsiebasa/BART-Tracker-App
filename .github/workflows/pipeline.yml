@@ -1,3 +1,4 @@
+
 name: Build and Deploy BART Live Tracker
 
 on:
@@ -29,6 +30,16 @@ jobs:
 
       - name: Install dependencies
         run: python -m pip install requests
+
+      - name: Prepare website files
+        run: |
+          mkdir -p public
+          if [ -s index.html ]; then
+            cp index.html public/index.html
+          elif [ ! -s public/index.html ]; then
+            echo "ERROR: Could not find index.html in the repository root or public folder."
+            exit 1
+          fi
 
       - name: Fetch BART data and build JSON
         run: python build_site.py
