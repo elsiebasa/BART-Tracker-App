@@ -9,7 +9,7 @@ API_URL = "https://api.bart.gov/api/etd.aspx"
 STATION_URL = "https://api.bart.gov/api/stn.aspx"
 BART_API_KEY = "MW9S-E7SL-26DU-VV8V"
 
-OUTPUT_FILE = Path("public/bart_data.json")
+OUTPUT_FILE = Path("bart_data.json")
 SESSION = requests.Session()
 
 
