@@ -15,15 +15,15 @@
       </h1>
       <p class="text-sm text-slate-400 mt-2">
         Data refreshes when the scheduled pipeline succeeds.
-        Last BART update: <span id="update-time" class="text-slate-200 font-mono">Loading...</span>
+        Last data update: <span id="update-time" class="text-slate-200 font-mono">Loading...</span>
       </p>
-      <p id="refresh-status" class="text-xs text-slate-500 mt-1" aria-live="polite">Loading departure data…</p>
+      <p id="refresh-status" class="text-xs text-slate-500 mt-1" aria-live="polite">Loading station list and departure data…</p>
     </header>
 
     <section class="bg-slate-800 p-5 rounded-2xl border border-slate-700 shadow-xl mb-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
       <div>
         <label for="station-picker" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Select Station</label>
-        <select id="station-picker" class="w-full bg-slate-900 border border-slate-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 font-medium">
+        <select id="station-picker" disabled class="w-full bg-slate-900 border border-slate-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 font-medium disabled:opacity-60">
           <option value="">Loading stations…</option>
         </select>
       </div>
@@ -37,13 +37,13 @@
       </div>
     </section>
 
-    <section id="train-container" class="space-y-4" aria-live="polite">
+    <section id="train-container" class="space-y-4" aria-live="polite" aria-busy="true">
       <div class="text-center py-12 text-slate-500">Loading train estimates…</div>
     </section>
 
     <footer class="text-center text-xs text-slate-500 mt-8">
       Departure estimates are provided by BART. Times may change.
-      <a class="underline hover:text-slate-300" href="https://www.bart.gov/schedules/developers/api" target="_blank" rel="noreferrer">BART API information</a>
+      <a class="underline hover:text-slate-300" href="https://www.bart.gov/schedules/developers/api" target="_blank" rel="noopener noreferrer">BART API information</a>
     </footer>
   </main>
 
@@ -51,6 +51,8 @@
     "use strict";
 
     let db = { metadata: {}, stations: [], trains: [] };
+    let hasLoadedData = false;
+
     const stationPicker = document.getElementById("station-picker");
     const directionPicker = document.getElementById("direction-picker");
     const trainContainer = document.getElementById("train-container");
@@ -65,111 +67,188 @@
       return element;
     }
 
+    function showMessage(message, className = "text-center py-12 bg-slate-800/40 border border-dashed border-slate-700 rounded-2xl text-slate-400") {
+      trainContainer.replaceChildren();
+      addText(trainContainer, "div", message, className);
+    }
+
+    // The pipeline writes public/bart_data.json. Try both paths so this page
+    // works whether the site is served from the repository root or public/.
+    async function fetchPublishedData() {
+      const paths = ["./bart_data.json", "./public/bart_data.json"];
+      let lastError = null;
+
+      for (const path of paths) {
+        try {
+          const response = await fetch(`${path}?t=${Date.now()}`, {
+            cache: "no-store"
+          });
+          if (!response.ok) {
+            throw new Error(`${path} returned HTTP ${response.status}`);
+          }
+
+          const nextDb = await response.json();
+          if (!nextDb || !Array.isArray(nextDb.stations) || !Array.isArray(nextDb.trains)) {
+            throw new Error(`${path} does not contain the expected stations and trains arrays`);
+          }
+
+          return nextDb;
+        } catch (error) {
+          lastError = error;
+        }
+      }
+
+      throw lastError || new Error("Could not find the BART data JSON file.");
+    }
+
+    function populateStationPicker(stations) {
+      const previousStation = stationPicker.value;
+      const validStations = stations
+        .filter(station => station && station.code && station.name)
+        .sort((a, b) => String(a.name).localeCompare(String(b.name)));
+
+      stationPicker.replaceChildren();
+      stationPicker.appendChild(new Option("Choose a station…", ""));
+
+      for (const station of validStations) {
+        stationPicker.appendChild(new Option(station.name, station.code));
+      }
+
+      // Preserve the user's choice whenever the JSON data refreshes.
+      stationPicker.value = validStations.some(station => station.code === previousStation)
+        ? previousStation
+        : "";
+      stationPicker.disabled = validStations.length === 0;
+    }
+
     async function initData() {
       try {
-        const response = await fetch(`./bart_data.json?t=${Date.now()}`, {
-          cache: "no-store"
-        });
-        if (!response.ok) throw new Error(`Data request failed (HTTP ${response.status})`);
-
-        const nextDb = await response.json();
-        if (!Array.isArray(nextDb.stations) || !Array.isArray(nextDb.trains)) {
-          throw new Error("The JSON file has an unexpected structure.");
+        const nextDb = await fetchPublishedData();
+        if (!nextDb.stations.some(station => station && station.code && station.name)) {
+          throw new Error("The JSON file does not contain any valid stations.");
         }
 
-        const previousStation = stationPicker.value;
-        db = nextDb;
-        updateTimeLabel.textContent = db.metadata?.last_updated ?? "Unknown";
+        db = {
+          metadata: nextDb.metadata || {},
+          stations: nextDb.stations,
+          trains: nextDb.trains.filter(train => train && train.origin_code)
+        };
+        hasLoadedData = true;
 
-        stationPicker.replaceChildren();
-        db.stations.forEach(station => {
-          const option = document.createElement("option");
-          option.value = station.code;
-          option.textContent = station.name;
-          stationPicker.appendChild(option);
-        });
-
-        if (db.stations.some(s => s.code === previousStation)) {
-          stationPicker.value = previousStation;
-        } else if (db.stations.some(s => s.code === "EMBR")) {
-          stationPicker.value = "EMBR";
-        }
-
+        updateTimeLabel.textContent = db.metadata.last_updated || "Unknown";
+        populateStationPicker(db.stations);
         renderDashboard();
-        refreshStatus.textContent = `Page checked at ${new Date().toLocaleTimeString()}`;
+
+        refreshStatus.textContent = `Data checked at ${new Date().toLocaleTimeString()}`;
       } catch (error) {
         console.error("Unable to load BART data:", error);
-        refreshStatus.textContent = "Could not refresh data; showing the last loaded data if available.";
-        if (!db.stations.length) {
-          trainContainer.replaceChildren();
-          addText(
-            trainContainer, "p",
-            "Unable to load BART data. The data file may not have been published yet.",
+        refreshStatus.textContent = hasLoadedData
+          ? `Refresh failed at ${new Date().toLocaleTimeString()}; showing the last successfully loaded data.`
+          : "Could not load BART data. Check that the data file has been published.";
+
+        if (!hasLoadedData) {
+          stationPicker.disabled = true;
+          stationPicker.replaceChildren(new Option("Stations unavailable", ""));
+          trainContainer.setAttribute("aria-busy", "false");
+          showMessage(
+            "Unable to load the station list or departure data. The data file may not have been published yet.",
             "text-center text-red-300 p-5 bg-red-950/40 rounded-xl border border-red-800"
           );
         }
+      } finally {
+        trainContainer.setAttribute("aria-busy", "false");
       }
     }
 
+    function directionMatches(trainDirection, selectedDirection) {
+      if (selectedDirection === "ALL") return true;
+      const direction = String(trainDirection || "").toLowerCase();
+      return direction.startsWith(selectedDirection.toLowerCase());
+    }
+
+    function minutesRank(value) {
+      const normalized = String(value ?? "").trim().toLowerCase();
+      if (normalized === "leaving") return -1;
+      const numeric = Number(normalized);
+      return normalized !== "" && Number.isFinite(numeric) ? numeric : Number.MAX_SAFE_INTEGER;
+    }
+
     function renderDashboard() {
+      if (!hasLoadedData) return;
+
       const selectedStation = stationPicker.value;
       const selectedDirection = directionPicker.value;
-      const trains = db.trains.filter(train =>
-        train.origin_code === selectedStation &&
-        (selectedDirection === "ALL" || train.direction === selectedDirection)
-      );
-
       trainContainer.replaceChildren();
 
-      if (!trains.length) {
-        addText(
-          trainContainer, "div",
-          "No departure estimates are currently available for this selection.",
-          "text-center py-12 bg-slate-800/40 border border-dashed border-slate-700 rounded-2xl text-slate-400"
-        );
+      if (!selectedStation) {
+        showMessage("Choose a BART station to view its departure estimates.");
         return;
       }
 
-      trains.forEach(train => {
+      const trains = db.trains
+        .filter(train =>
+          String(train.origin_code) === selectedStation &&
+          directionMatches(train.direction, selectedDirection)
+        )
+        .sort((a, b) => minutesRank(a.minutes) - minutesRank(b.minutes));
+
+      if (trains.length === 0) {
+        showMessage("No departure estimates are currently available for this station and direction. Try another direction or check again after the next data refresh.");
+        return;
+      }
+
+      for (const train of trains) {
         const card = document.createElement("article");
         card.className = "bg-slate-800 rounded-xl p-5 border border-slate-700 shadow-lg flex justify-between items-center gap-4";
 
         const details = document.createElement("div");
         details.className = "min-w-0";
+
         const heading = document.createElement("div");
         heading.className = "flex items-center gap-2 mb-1";
 
         const dot = document.createElement("span");
         dot.className = "w-3 h-3 rounded-full shrink-0";
-        dot.style.backgroundColor = /^#[0-9a-f]{6}$/i.test(train.color || "") ? train.color : "#64748b";
+        dot.style.backgroundColor = /^#[0-9a-f]{6}$/i.test(String(train.color || ""))
+          ? train.color
+          : "#64748b";
+        dot.setAttribute("aria-hidden", "true");
         heading.appendChild(dot);
+
         addText(heading, "h3", train.destination || "Unknown destination", "text-lg sm:text-xl font-bold text-white");
         details.appendChild(heading);
 
+        const direction = train.direction || "Unknown direction";
+        const platform = train.platform || "N/A";
+        const length = train.length || "N/A";
         addText(
-          details, "p",
-          `Platform ${train.platform} • ${train.length}-car train • ${train.direction}bound`,
+          details,
+          "p",
+          `Platform ${platform} • ${length}-car train • ${direction}`,
           "text-xs text-slate-400"
         );
 
         const arrival = document.createElement("div");
         arrival.className = "text-right shrink-0";
-        const leaving = train.minutes === "Leaving";
+        const minutes = String(train.minutes ?? "Unknown");
+        const leaving = minutes.toLowerCase() === "leaving";
         addText(
-          arrival, "span",
-          leaving ? "Leaving now" : `${train.minutes} min`,
+          arrival,
+          "span",
+          leaving ? "Leaving now" : (minutes.toLowerCase() === "unknown" ? "Time unavailable" : `${minutes} min`),
           `inline-block px-3 py-2 rounded-lg font-bold text-sm ${leaving ? "bg-emerald-500 text-white" : "bg-slate-700 text-slate-200"}`
         );
 
         card.append(details, arrival);
         trainContainer.appendChild(card);
-      });
+      }
     }
 
     stationPicker.addEventListener("change", renderDashboard);
     directionPicker.addEventListener("change", renderDashboard);
+
     initData();
-    // The browser checks for a newly deployed JSON file every minute.
+    // Recheck for a newly published JSON file every minute.
     setInterval(initData, 60_000);
   </script>
 </body>
