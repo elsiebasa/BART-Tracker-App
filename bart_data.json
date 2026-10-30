@@ -1,0 +1,6230 @@
+{
+  "metadata": {
+    "last_updated": "2026-10-30 22:21:21 UTC",
+    "total_records": 602
+  },
+  "stations": [
+    {
+      "code": "12TH",
+      "name": "12th St./Oakland City Center"
+    },
+    {
+      "code": "16TH",
+      "name": "16th St./Mission"
+    },
+    {
+      "code": "19TH",
+      "name": "19th St./Oakland"
+    },
+    {
+      "code": "24TH",
+      "name": "24th St./Mission"
+    },
+    {
+      "code": "ANTC",
+      "name": "Antioch"
+    },
+    {
+      "code": "ASHB",
+      "name": "Ashby"
+    },
+    {
+      "code": "BALB",
+      "name": "Balboa Park"
+    },
+    {
+      "code": "BAYF",
+      "name": "Bay Fair"
+    },
+    {
+      "code": "BERY",
+      "name": "Berryessa/North San Jose"
+    },
+    {
+      "code": "CAST",
+      "name": "Castro Valley"
+    },
+    {
+      "code": "CIVC",
+      "name": "Civic Center/UN Plaza"
+    },
+    {
+      "code": "COLS",
+      "name": "Coliseum"
+    },
+    {
+      "code": "COLM",
+      "name": "Colma"
+    },
+    {
+      "code": "CONC",
+      "name": "Concord"
+    },
+    {
+      "code": "DALY",
+      "name": "Daly City"
+    },
+    {
+      "code": "DBRK",
+      "name": "Downtown Berkeley"
+    },
+    {
+      "code": "DUBL",
+      "name": "Dublin/Pleasanton"
+    },
+    {
+      "code": "DELN",
+      "name": "El Cerrito del Norte"
+    },
+    {
+      "code": "PLZA",
+      "name": "El Cerrito Plaza"
+    },
+    {
+      "code": "EMBR",
+      "name": "Embarcadero"
+    },
+    {
+      "code": "FRMT",
+      "name": "Fremont"
+    },
+    {
+      "code": "FTVL",
+      "name": "Fruitvale"
+    },
+    {
+      "code": "GLEN",
+      "name": "Glen Park"
+    },
+    {
+      "code": "HAYW",
+      "name": "Hayward"
+    },
+    {
+      "code": "LAFY",
+      "name": "Lafayette"
+    },
+    {
+      "code": "LAKE",
+      "name": "Lake Merritt"
+    },
+    {
+      "code": "MCAR",
+      "name": "MacArthur"
+    },
+    {
+      "code": "MLBR",
+      "name": "Millbrae"
+    },
+    {
+      "code": "MLPT",
+      "name": "Milpitas"
+    },
+    {
+      "code": "MONT",
+      "name": "Montgomery St."
+    },
+    {
+      "code": "NBRK",
+      "name": "North Berkeley"
+    },
+    {
+      "code": "NCON",
+      "name": "North Concord/Martinez"
+    },
+    {
+      "code": "OAKL",
+      "name": "Oakland International Airport (OAK)"
+    },
+    {
+      "code": "ORIN",
+      "name": "Orinda"
+    },
+    {
+      "code": "PCTR",
+      "name": "Pittsburg Center"
+    },
+    {
+      "code": "PITT",
+      "name": "Pittsburg/Bay Point"
+    },
+    {
+      "code": "PHIL",
+      "name": "Pleasant Hill/Contra Costa Centre"
+    },
+    {
+      "code": "POWL",
+      "name": "Powell St."
+    },
+    {
+      "code": "RICH",
+      "name": "Richmond"
+    },
+    {
+      "code": "ROCK",
+      "name": "Rockridge"
+    },
+    {
+      "code": "SBRN",
+      "name": "San Bruno"
+    },
+    {
+      "code": "SFIA",
+      "name": "San Francisco International Airport (SFO)"
+    },
+    {
+      "code": "SANL",
+      "name": "San Leandro"
+    },
+    {
+      "code": "SHAY",
+      "name": "South Hayward"
+    },
+    {
+      "code": "SSAN",
+      "name": "South San Francisco"
+    },
+    {
+      "code": "UCTY",
+      "name": "Union City"
+    },
+    {
+      "code": "WCRK",
+      "name": "Walnut Creek"
+    },
+    {
+      "code": "WARM",
+      "name": "Warm Springs/South Fremont"
+    },
+    {
+      "code": "WDUB",
+      "name": "West Dublin/Pleasanton"
+    },
+    {
+      "code": "WOAK",
+      "name": "West Oakland"
+    }
+  ],
+  "trains": [
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Antioch",
+      "minutes": "12",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Antioch",
+      "minutes": "32",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Antioch",
+      "minutes": "52",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Berryessa",
+      "minutes": "11",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Berryessa",
+      "minutes": "31",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Berryessa",
+      "minutes": "51",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Millbrae",
+      "minutes": "4",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Millbrae",
+      "minutes": "16",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Millbrae",
+      "minutes": "36",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "5",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "24",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "44",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Richmond",
+      "minutes": "2",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Richmond",
+      "minutes": "13",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "Richmond",
+      "minutes": "21",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "SF Airport",
+      "minutes": "Leaving",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "SF Airport",
+      "minutes": "1",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "12TH",
+      "origin_name": "12th St./Oakland City Center",
+      "destination": "SF Airport",
+      "minutes": "9",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Antioch",
+      "minutes": "13",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Antioch",
+      "minutes": "33",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Antioch",
+      "minutes": "61",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Berryessa",
+      "minutes": "10",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Berryessa",
+      "minutes": "36",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Berryessa",
+      "minutes": "50",
+      "direction": "North",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Daly City",
+      "minutes": "6",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Daly City",
+      "minutes": "16",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Daly City",
+      "minutes": "19",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "18",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "44",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "58",
+      "direction": "North",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Millbrae",
+      "minutes": "9",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Millbrae",
+      "minutes": "21",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Millbrae",
+      "minutes": "35",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "6",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "26",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "45",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Richmond",
+      "minutes": "4",
+      "direction": "North",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Richmond",
+      "minutes": "23",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "Richmond",
+      "minutes": "42",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "SF Airport",
+      "minutes": "13",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "SF Airport",
+      "minutes": "17",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "16TH",
+      "origin_name": "16th St./Mission",
+      "destination": "SF Airport",
+      "minutes": "23",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Antioch",
+      "minutes": "14",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Antioch",
+      "minutes": "34",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Antioch",
+      "minutes": "54",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Berryessa",
+      "minutes": "9",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Berryessa",
+      "minutes": "29",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Berryessa",
+      "minutes": "49",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Millbrae",
+      "minutes": "Leaving",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Millbrae",
+      "minutes": "14",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Millbrae",
+      "minutes": "34",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "7",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "26",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "46",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Richmond",
+      "minutes": "Leaving",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Richmond",
+      "minutes": "3",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "Richmond",
+      "minutes": "15",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "SF Airport",
+      "minutes": "1",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "SF Airport",
+      "minutes": "7",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "19TH",
+      "origin_name": "19th St./Oakland",
+      "destination": "SF Airport",
+      "minutes": "19",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Antioch",
+      "minutes": "11",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Antioch",
+      "minutes": "31",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Antioch",
+      "minutes": "59",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Berryessa",
+      "minutes": "8",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Berryessa",
+      "minutes": "34",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Berryessa",
+      "minutes": "48",
+      "direction": "North",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Daly City",
+      "minutes": "8",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Daly City",
+      "minutes": "18",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Daly City",
+      "minutes": "21",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "16",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "42",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "56",
+      "direction": "North",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Millbrae",
+      "minutes": "11",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Millbrae",
+      "minutes": "23",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Millbrae",
+      "minutes": "37",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "4",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "24",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "42",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Richmond",
+      "minutes": "2",
+      "direction": "North",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Richmond",
+      "minutes": "21",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "Richmond",
+      "minutes": "40",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "SF Airport",
+      "minutes": "15",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "SF Airport",
+      "minutes": "19",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "24TH",
+      "origin_name": "24th St./Mission",
+      "destination": "SF Airport",
+      "minutes": "25",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ANTC",
+      "origin_name": "Antioch",
+      "destination": "SFO/Millbrae",
+      "minutes": "7",
+      "direction": "South",
+      "platform": "2",
+      "length": "1",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ANTC",
+      "origin_name": "Antioch",
+      "destination": "SFO/Millbrae",
+      "minutes": "27",
+      "direction": "South",
+      "platform": "2",
+      "length": "1",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ANTC",
+      "origin_name": "Antioch",
+      "destination": "SFO/Millbrae",
+      "minutes": "47",
+      "direction": "South",
+      "platform": "2",
+      "length": "1",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ASHB",
+      "origin_name": "Ashby",
+      "destination": "Berryessa",
+      "minutes": "Leaving",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "ASHB",
+      "origin_name": "Ashby",
+      "destination": "Berryessa",
+      "minutes": "19",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "ASHB",
+      "origin_name": "Ashby",
+      "destination": "Berryessa",
+      "minutes": "39",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "ASHB",
+      "origin_name": "Ashby",
+      "destination": "Millbrae",
+      "minutes": "7",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "ASHB",
+      "origin_name": "Ashby",
+      "destination": "Millbrae",
+      "minutes": "27",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "ASHB",
+      "origin_name": "Ashby",
+      "destination": "Millbrae",
+      "minutes": "47",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "ASHB",
+      "origin_name": "Ashby",
+      "destination": "Richmond",
+      "minutes": "6",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "ASHB",
+      "origin_name": "Ashby",
+      "destination": "Richmond",
+      "minutes": "9",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "ASHB",
+      "origin_name": "Ashby",
+      "destination": "Richmond",
+      "minutes": "21",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Antioch",
+      "minutes": "6",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Antioch",
+      "minutes": "26",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Antioch",
+      "minutes": "54",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Berryessa",
+      "minutes": "3",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Berryessa",
+      "minutes": "29",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Berryessa",
+      "minutes": "43",
+      "direction": "North",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Daly City",
+      "minutes": "13",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Daly City",
+      "minutes": "23",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Daly City",
+      "minutes": "25",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "11",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "37",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "51",
+      "direction": "North",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Millbrae",
+      "minutes": "16",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Millbrae",
+      "minutes": "28",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Millbrae",
+      "minutes": "42",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "19",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "37",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "59",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Richmond",
+      "minutes": "17",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Richmond",
+      "minutes": "35",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "Richmond",
+      "minutes": "55",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "SF Airport",
+      "minutes": "20",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "SF Airport",
+      "minutes": "24",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "BALB",
+      "origin_name": "Balboa Park",
+      "destination": "SF Airport",
+      "minutes": "30",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "BAYF",
+      "origin_name": "Bay Fair",
+      "destination": "Berryessa",
+      "minutes": "6",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "BAYF",
+      "origin_name": "Bay Fair",
+      "destination": "Berryessa",
+      "minutes": "9",
+      "direction": "South",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "BAYF",
+      "origin_name": "Bay Fair",
+      "destination": "Berryessa",
+      "minutes": "27",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "BAYF",
+      "origin_name": "Bay Fair",
+      "destination": "Daly City",
+      "minutes": "Leaving",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "BAYF",
+      "origin_name": "Bay Fair",
+      "destination": "Daly City",
+      "minutes": "8",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "BAYF",
+      "origin_name": "Bay Fair",
+      "destination": "Daly City",
+      "minutes": "16",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "BAYF",
+      "origin_name": "Bay Fair",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "14",
+      "direction": "North",
+      "platform": "1",
+      "length": "10",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "BAYF",
+      "origin_name": "Bay Fair",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "34",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "BAYF",
+      "origin_name": "Bay Fair",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "54",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "BAYF",
+      "origin_name": "Bay Fair",
+      "destination": "Richmond",
+      "minutes": "15",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "BAYF",
+      "origin_name": "Bay Fair",
+      "destination": "Richmond",
+      "minutes": "33",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "BAYF",
+      "origin_name": "Bay Fair",
+      "destination": "Richmond",
+      "minutes": "53",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "BERY",
+      "origin_name": "Berryessa/North San Jose",
+      "destination": "Daly City",
+      "minutes": "1",
+      "direction": "South",
+      "platform": "1",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "BERY",
+      "origin_name": "Berryessa/North San Jose",
+      "destination": "Daly City",
+      "minutes": "21",
+      "direction": "South",
+      "platform": "1",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "BERY",
+      "origin_name": "Berryessa/North San Jose",
+      "destination": "Daly City",
+      "minutes": "41",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "BERY",
+      "origin_name": "Berryessa/North San Jose",
+      "destination": "Richmond",
+      "minutes": "17",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "BERY",
+      "origin_name": "Berryessa/North San Jose",
+      "destination": "Richmond",
+      "minutes": "37",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "CAST",
+      "origin_name": "Castro Valley",
+      "destination": "Daly City",
+      "minutes": "4",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "CAST",
+      "origin_name": "Castro Valley",
+      "destination": "Daly City",
+      "minutes": "24",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "CAST",
+      "origin_name": "Castro Valley",
+      "destination": "Daly City",
+      "minutes": "44",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "CAST",
+      "origin_name": "Castro Valley",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "Leaving",
+      "direction": "North",
+      "platform": "1",
+      "length": "10",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "CAST",
+      "origin_name": "Castro Valley",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "18",
+      "direction": "North",
+      "platform": "1",
+      "length": "10",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "CAST",
+      "origin_name": "Castro Valley",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "38",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Antioch",
+      "minutes": "15",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Antioch",
+      "minutes": "35",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Antioch",
+      "minutes": "64",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Berryessa",
+      "minutes": "13",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Berryessa",
+      "minutes": "38",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Berryessa",
+      "minutes": "53",
+      "direction": "North",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Daly City",
+      "minutes": "4",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Daly City",
+      "minutes": "13",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Daly City",
+      "minutes": "16",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "1",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "21",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "46",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Millbrae",
+      "minutes": "6",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Millbrae",
+      "minutes": "19",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Millbrae",
+      "minutes": "33",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "9",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "28",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "47",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Richmond",
+      "minutes": "6",
+      "direction": "North",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Richmond",
+      "minutes": "25",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "Richmond",
+      "minutes": "44",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "SF Airport",
+      "minutes": "11",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "SF Airport",
+      "minutes": "15",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CIVC",
+      "origin_name": "Civic Center/UN Plaza",
+      "destination": "SF Airport",
+      "minutes": "21",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "COLS",
+      "origin_name": "Coliseum",
+      "destination": "Berryessa",
+      "minutes": "2",
+      "direction": "South",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "COLS",
+      "origin_name": "Coliseum",
+      "destination": "Berryessa",
+      "minutes": "18",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "COLS",
+      "origin_name": "Coliseum",
+      "destination": "Berryessa",
+      "minutes": "21",
+      "direction": "South",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "COLS",
+      "origin_name": "Coliseum",
+      "destination": "Daly City",
+      "minutes": "8",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "COLS",
+      "origin_name": "Coliseum",
+      "destination": "Daly City",
+      "minutes": "16",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "COLS",
+      "origin_name": "Coliseum",
+      "destination": "Daly City",
+      "minutes": "24",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "COLS",
+      "origin_name": "Coliseum",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "6",
+      "direction": "North",
+      "platform": "1",
+      "length": "10",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "COLS",
+      "origin_name": "Coliseum",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "26",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "COLS",
+      "origin_name": "Coliseum",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "46",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "COLS",
+      "origin_name": "Coliseum",
+      "destination": "Richmond",
+      "minutes": "3",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "COLS",
+      "origin_name": "Coliseum",
+      "destination": "Richmond",
+      "minutes": "22",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "COLS",
+      "origin_name": "Coliseum",
+      "destination": "Richmond",
+      "minutes": "41",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "COLM",
+      "origin_name": "Colma",
+      "destination": "Antioch",
+      "minutes": "18",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "COLM",
+      "origin_name": "Colma",
+      "destination": "Antioch",
+      "minutes": "48",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "COLM",
+      "origin_name": "Colma",
+      "destination": "Millbrae",
+      "minutes": "24",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "COLM",
+      "origin_name": "Colma",
+      "destination": "Millbrae",
+      "minutes": "35",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "COLM",
+      "origin_name": "Colma",
+      "destination": "Millbrae",
+      "minutes": "50",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "COLM",
+      "origin_name": "Colma",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "10",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "COLM",
+      "origin_name": "Colma",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "30",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "COLM",
+      "origin_name": "Colma",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "52",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "COLM",
+      "origin_name": "Colma",
+      "destination": "Richmond",
+      "minutes": "10",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "COLM",
+      "origin_name": "Colma",
+      "destination": "Richmond",
+      "minutes": "28",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "COLM",
+      "origin_name": "Colma",
+      "destination": "Richmond",
+      "minutes": "48",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "COLM",
+      "origin_name": "Colma",
+      "destination": "SF Airport",
+      "minutes": "28",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "COLM",
+      "origin_name": "Colma",
+      "destination": "SF Airport",
+      "minutes": "32",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "COLM",
+      "origin_name": "Colma",
+      "destination": "SF Airport",
+      "minutes": "37",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CONC",
+      "origin_name": "Concord",
+      "destination": "Antioch",
+      "minutes": "5",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CONC",
+      "origin_name": "Concord",
+      "destination": "Antioch",
+      "minutes": "23",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CONC",
+      "origin_name": "Concord",
+      "destination": "Antioch",
+      "minutes": "43",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CONC",
+      "origin_name": "Concord",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "15",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CONC",
+      "origin_name": "Concord",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "35",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CONC",
+      "origin_name": "Concord",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "55",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CONC",
+      "origin_name": "Concord",
+      "destination": "SF Airport",
+      "minutes": "7",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CONC",
+      "origin_name": "Concord",
+      "destination": "SF Airport",
+      "minutes": "16",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "CONC",
+      "origin_name": "Concord",
+      "destination": "SF Airport",
+      "minutes": "27",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Antioch",
+      "minutes": "3",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Antioch",
+      "minutes": "22",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Antioch",
+      "minutes": "51",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Berryessa",
+      "minutes": "Leaving",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Berryessa",
+      "minutes": "26",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Berryessa",
+      "minutes": "40",
+      "direction": "North",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "8",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "34",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "48",
+      "direction": "North",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Millbrae",
+      "minutes": "20",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Millbrae",
+      "minutes": "32",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Millbrae",
+      "minutes": "47",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "14",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "34",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "56",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Richmond",
+      "minutes": "13",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Richmond",
+      "minutes": "31",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "Richmond",
+      "minutes": "51",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "SF Airport",
+      "minutes": "24",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "SF Airport",
+      "minutes": "29",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "DALY",
+      "origin_name": "Daly City",
+      "destination": "SF Airport",
+      "minutes": "34",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "DBRK",
+      "origin_name": "Downtown Berkeley",
+      "destination": "Berryessa",
+      "minutes": "17",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "DBRK",
+      "origin_name": "Downtown Berkeley",
+      "destination": "Berryessa",
+      "minutes": "37",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "DBRK",
+      "origin_name": "Downtown Berkeley",
+      "destination": "Berryessa",
+      "minutes": "57",
+      "direction": "South",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "DBRK",
+      "origin_name": "Downtown Berkeley",
+      "destination": "Millbrae",
+      "minutes": "5",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "DBRK",
+      "origin_name": "Downtown Berkeley",
+      "destination": "Millbrae",
+      "minutes": "24",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "DBRK",
+      "origin_name": "Downtown Berkeley",
+      "destination": "Millbrae",
+      "minutes": "44",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "DBRK",
+      "origin_name": "Downtown Berkeley",
+      "destination": "Richmond",
+      "minutes": "9",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "DBRK",
+      "origin_name": "Downtown Berkeley",
+      "destination": "Richmond",
+      "minutes": "12",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "DBRK",
+      "origin_name": "Downtown Berkeley",
+      "destination": "Richmond",
+      "minutes": "23",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "DUBL",
+      "origin_name": "Dublin/Pleasanton",
+      "destination": "Daly City",
+      "minutes": "10",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "DUBL",
+      "origin_name": "Dublin/Pleasanton",
+      "destination": "Daly City",
+      "minutes": "30",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "DELN",
+      "origin_name": "El Cerrito del Norte",
+      "destination": "Berryessa",
+      "minutes": "8",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "DELN",
+      "origin_name": "El Cerrito del Norte",
+      "destination": "Berryessa",
+      "minutes": "28",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "DELN",
+      "origin_name": "El Cerrito del Norte",
+      "destination": "Berryessa",
+      "minutes": "48",
+      "direction": "South",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "DELN",
+      "origin_name": "El Cerrito del Norte",
+      "destination": "Millbrae",
+      "minutes": "15",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "DELN",
+      "origin_name": "El Cerrito del Norte",
+      "destination": "Millbrae",
+      "minutes": "35",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "DELN",
+      "origin_name": "El Cerrito del Norte",
+      "destination": "Richmond",
+      "minutes": "2",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "DELN",
+      "origin_name": "El Cerrito del Norte",
+      "destination": "Richmond",
+      "minutes": "17",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "DELN",
+      "origin_name": "El Cerrito del Norte",
+      "destination": "Richmond",
+      "minutes": "21",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "PLZA",
+      "origin_name": "El Cerrito Plaza",
+      "destination": "Berryessa",
+      "minutes": "11",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "PLZA",
+      "origin_name": "El Cerrito Plaza",
+      "destination": "Berryessa",
+      "minutes": "31",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "PLZA",
+      "origin_name": "El Cerrito Plaza",
+      "destination": "Berryessa",
+      "minutes": "51",
+      "direction": "South",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "PLZA",
+      "origin_name": "El Cerrito Plaza",
+      "destination": "Millbrae",
+      "minutes": "18",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "PLZA",
+      "origin_name": "El Cerrito Plaza",
+      "destination": "Millbrae",
+      "minutes": "38",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "PLZA",
+      "origin_name": "El Cerrito Plaza",
+      "destination": "Richmond",
+      "minutes": "15",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "PLZA",
+      "origin_name": "El Cerrito Plaza",
+      "destination": "Richmond",
+      "minutes": "17",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "PLZA",
+      "origin_name": "El Cerrito Plaza",
+      "destination": "Richmond",
+      "minutes": "29",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Antioch",
+      "minutes": "1",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Antioch",
+      "minutes": "20",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Antioch",
+      "minutes": "40",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Berryessa",
+      "minutes": "18",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Berryessa",
+      "minutes": "43",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Berryessa",
+      "minutes": "58",
+      "direction": "North",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Daly City",
+      "minutes": "6",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Daly City",
+      "minutes": "12",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Daly City",
+      "minutes": "17",
+      "direction": "South",
+      "platform": "1",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "6",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "26",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "51",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Millbrae",
+      "minutes": "1",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Millbrae",
+      "minutes": "14",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Millbrae",
+      "minutes": "28",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "13",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "33",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "52",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Richmond",
+      "minutes": "11",
+      "direction": "North",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Richmond",
+      "minutes": "30",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "Richmond",
+      "minutes": "49",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "SF Airport",
+      "minutes": "7",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "SF Airport",
+      "minutes": "11",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "EMBR",
+      "origin_name": "Embarcadero",
+      "destination": "SF Airport",
+      "minutes": "16",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "FRMT",
+      "origin_name": "Fremont",
+      "destination": "Berryessa",
+      "minutes": "4",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "FRMT",
+      "origin_name": "Fremont",
+      "destination": "Berryessa",
+      "minutes": "8",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "FRMT",
+      "origin_name": "Fremont",
+      "destination": "Berryessa",
+      "minutes": "24",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "FRMT",
+      "origin_name": "Fremont",
+      "destination": "Daly City",
+      "minutes": "Leaving",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "FRMT",
+      "origin_name": "Fremont",
+      "destination": "Daly City",
+      "minutes": "19",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "FRMT",
+      "origin_name": "Fremont",
+      "destination": "Daly City",
+      "minutes": "39",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "FRMT",
+      "origin_name": "Fremont",
+      "destination": "Richmond",
+      "minutes": "16",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "FRMT",
+      "origin_name": "Fremont",
+      "destination": "Richmond",
+      "minutes": "36",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "FRMT",
+      "origin_name": "Fremont",
+      "destination": "Richmond",
+      "minutes": "56",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "FTVL",
+      "origin_name": "Fruitvale",
+      "destination": "Berryessa",
+      "minutes": "16",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "FTVL",
+      "origin_name": "Fruitvale",
+      "destination": "Berryessa",
+      "minutes": "18",
+      "direction": "South",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "FTVL",
+      "origin_name": "Fruitvale",
+      "destination": "Berryessa",
+      "minutes": "35",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "FTVL",
+      "origin_name": "Fruitvale",
+      "destination": "Daly City",
+      "minutes": "Leaving",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "FTVL",
+      "origin_name": "Fruitvale",
+      "destination": "Daly City",
+      "minutes": "11",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "FTVL",
+      "origin_name": "Fruitvale",
+      "destination": "Daly City",
+      "minutes": "20",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "FTVL",
+      "origin_name": "Fruitvale",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "3",
+      "direction": "North",
+      "platform": "1",
+      "length": "10",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "FTVL",
+      "origin_name": "Fruitvale",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "23",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "FTVL",
+      "origin_name": "Fruitvale",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "43",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "FTVL",
+      "origin_name": "Fruitvale",
+      "destination": "Richmond",
+      "minutes": "6",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "FTVL",
+      "origin_name": "Fruitvale",
+      "destination": "Richmond",
+      "minutes": "25",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "FTVL",
+      "origin_name": "Fruitvale",
+      "destination": "Richmond",
+      "minutes": "44",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Antioch",
+      "minutes": "8",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Antioch",
+      "minutes": "28",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Antioch",
+      "minutes": "57",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Berryessa",
+      "minutes": "6",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Berryessa",
+      "minutes": "31",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Berryessa",
+      "minutes": "46",
+      "direction": "North",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Daly City",
+      "minutes": "11",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Daly City",
+      "minutes": "21",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Daly City",
+      "minutes": "23",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "14",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "39",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "54",
+      "direction": "North",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Millbrae",
+      "minutes": "14",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Millbrae",
+      "minutes": "26",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Millbrae",
+      "minutes": "40",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "2",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "21",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "40",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Richmond",
+      "minutes": "18",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Richmond",
+      "minutes": "37",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "Richmond",
+      "minutes": "57",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "SF Airport",
+      "minutes": "18",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "SF Airport",
+      "minutes": "22",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "GLEN",
+      "origin_name": "Glen Park",
+      "destination": "SF Airport",
+      "minutes": "28",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "HAYW",
+      "origin_name": "Hayward",
+      "destination": "Berryessa",
+      "minutes": "10",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "HAYW",
+      "origin_name": "Hayward",
+      "destination": "Berryessa",
+      "minutes": "14",
+      "direction": "South",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "HAYW",
+      "origin_name": "Hayward",
+      "destination": "Berryessa",
+      "minutes": "30",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "HAYW",
+      "origin_name": "Hayward",
+      "destination": "Daly City",
+      "minutes": "12",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "HAYW",
+      "origin_name": "Hayward",
+      "destination": "Daly City",
+      "minutes": "32",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "HAYW",
+      "origin_name": "Hayward",
+      "destination": "Daly City",
+      "minutes": "52",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "HAYW",
+      "origin_name": "Hayward",
+      "destination": "Richmond",
+      "minutes": "11",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "HAYW",
+      "origin_name": "Hayward",
+      "destination": "Richmond",
+      "minutes": "29",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "HAYW",
+      "origin_name": "Hayward",
+      "destination": "Richmond",
+      "minutes": "49",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "LAFY",
+      "origin_name": "Lafayette",
+      "destination": "Antioch",
+      "minutes": "11",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "LAFY",
+      "origin_name": "Lafayette",
+      "destination": "Antioch",
+      "minutes": "31",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "LAFY",
+      "origin_name": "Lafayette",
+      "destination": "Antioch",
+      "minutes": "51",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "LAFY",
+      "origin_name": "Lafayette",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "3",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "LAFY",
+      "origin_name": "Lafayette",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "22",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "LAFY",
+      "origin_name": "Lafayette",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "42",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "LAFY",
+      "origin_name": "Lafayette",
+      "destination": "SF Airport",
+      "minutes": "3",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "LAFY",
+      "origin_name": "Lafayette",
+      "destination": "SF Airport",
+      "minutes": "9",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "LAFY",
+      "origin_name": "Lafayette",
+      "destination": "SF Airport",
+      "minutes": "20",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "LAKE",
+      "origin_name": "Lake Merritt",
+      "destination": "Berryessa",
+      "minutes": "12",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "LAKE",
+      "origin_name": "Lake Merritt",
+      "destination": "Berryessa",
+      "minutes": "14",
+      "direction": "South",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "LAKE",
+      "origin_name": "Lake Merritt",
+      "destination": "Berryessa",
+      "minutes": "31",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "LAKE",
+      "origin_name": "Lake Merritt",
+      "destination": "Daly City",
+      "minutes": "Leaving",
+      "direction": "South",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "LAKE",
+      "origin_name": "Lake Merritt",
+      "destination": "Daly City",
+      "minutes": "4",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "LAKE",
+      "origin_name": "Lake Merritt",
+      "destination": "Daly City",
+      "minutes": "15",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "LAKE",
+      "origin_name": "Lake Merritt",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "19",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "LAKE",
+      "origin_name": "Lake Merritt",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "39",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "LAKE",
+      "origin_name": "Lake Merritt",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "63",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "LAKE",
+      "origin_name": "Lake Merritt",
+      "destination": "Richmond",
+      "minutes": "10",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "LAKE",
+      "origin_name": "Lake Merritt",
+      "destination": "Richmond",
+      "minutes": "29",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "LAKE",
+      "origin_name": "Lake Merritt",
+      "destination": "Richmond",
+      "minutes": "49",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Antioch",
+      "minutes": "18",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Antioch",
+      "minutes": "38",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Antioch",
+      "minutes": "58",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Berryessa",
+      "minutes": "6",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Berryessa",
+      "minutes": "25",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Berryessa",
+      "minutes": "45",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Millbrae",
+      "minutes": "10",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Millbrae",
+      "minutes": "30",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Millbrae",
+      "minutes": "50",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "10",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "29",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "49",
+      "direction": "North",
+      "platform": "3",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Richmond",
+      "minutes": "4",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Richmond",
+      "minutes": "7",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "Richmond",
+      "minutes": "18",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "SF Airport",
+      "minutes": "3",
+      "direction": "South",
+      "platform": "4",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "SF Airport",
+      "minutes": "16",
+      "direction": "South",
+      "platform": "4",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MCAR",
+      "origin_name": "MacArthur",
+      "destination": "SF Airport",
+      "minutes": "23",
+      "direction": "South",
+      "platform": "4",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MLBR",
+      "origin_name": "Millbrae",
+      "destination": "Richmond",
+      "minutes": "11",
+      "direction": "North",
+      "platform": "3",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "MLBR",
+      "origin_name": "Millbrae",
+      "destination": "Richmond",
+      "minutes": "31",
+      "direction": "North",
+      "platform": "3",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "MLPT",
+      "origin_name": "Milpitas",
+      "destination": "Berryessa",
+      "minutes": "Leaving",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "MLPT",
+      "origin_name": "Milpitas",
+      "destination": "Berryessa",
+      "minutes": "4",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "MLPT",
+      "origin_name": "Milpitas",
+      "destination": "Berryessa",
+      "minutes": "18",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "MLPT",
+      "origin_name": "Milpitas",
+      "destination": "Daly City",
+      "minutes": "5",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "MLPT",
+      "origin_name": "Milpitas",
+      "destination": "Daly City",
+      "minutes": "25",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "MLPT",
+      "origin_name": "Milpitas",
+      "destination": "Daly City",
+      "minutes": "45",
+      "direction": "South",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "MLPT",
+      "origin_name": "Milpitas",
+      "destination": "Richmond",
+      "minutes": "1",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "MLPT",
+      "origin_name": "Milpitas",
+      "destination": "Richmond",
+      "minutes": "22",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "MLPT",
+      "origin_name": "Milpitas",
+      "destination": "Richmond",
+      "minutes": "42",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Antioch",
+      "minutes": "Leaving",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Antioch",
+      "minutes": "19",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Antioch",
+      "minutes": "39",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Berryessa",
+      "minutes": "16",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Berryessa",
+      "minutes": "41",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Berryessa",
+      "minutes": "56",
+      "direction": "North",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Daly City",
+      "minutes": "1",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Daly City",
+      "minutes": "9",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Daly City",
+      "minutes": "14",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "4",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "24",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "50",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Millbrae",
+      "minutes": "1",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Millbrae",
+      "minutes": "16",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Millbrae",
+      "minutes": "29",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "11",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "31",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "50",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Richmond",
+      "minutes": "9",
+      "direction": "North",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Richmond",
+      "minutes": "29",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "Richmond",
+      "minutes": "48",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "SF Airport",
+      "minutes": "8",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "SF Airport",
+      "minutes": "12",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "MONT",
+      "origin_name": "Montgomery St.",
+      "destination": "SF Airport",
+      "minutes": "18",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "NBRK",
+      "origin_name": "North Berkeley",
+      "destination": "Berryessa",
+      "minutes": "14",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "NBRK",
+      "origin_name": "North Berkeley",
+      "destination": "Berryessa",
+      "minutes": "34",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "NBRK",
+      "origin_name": "North Berkeley",
+      "destination": "Berryessa",
+      "minutes": "54",
+      "direction": "South",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "NBRK",
+      "origin_name": "North Berkeley",
+      "destination": "Millbrae",
+      "minutes": "2",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "NBRK",
+      "origin_name": "North Berkeley",
+      "destination": "Millbrae",
+      "minutes": "22",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "NBRK",
+      "origin_name": "North Berkeley",
+      "destination": "Millbrae",
+      "minutes": "42",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "NBRK",
+      "origin_name": "North Berkeley",
+      "destination": "Richmond",
+      "minutes": "11",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "NBRK",
+      "origin_name": "North Berkeley",
+      "destination": "Richmond",
+      "minutes": "14",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "NBRK",
+      "origin_name": "North Berkeley",
+      "destination": "Richmond",
+      "minutes": "25",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "NCON",
+      "origin_name": "North Concord/Martinez",
+      "destination": "Antioch",
+      "minutes": "5",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "NCON",
+      "origin_name": "North Concord/Martinez",
+      "destination": "Antioch",
+      "minutes": "9",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "NCON",
+      "origin_name": "North Concord/Martinez",
+      "destination": "Antioch",
+      "minutes": "27",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "NCON",
+      "origin_name": "North Concord/Martinez",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "19",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "NCON",
+      "origin_name": "North Concord/Martinez",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "39",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "NCON",
+      "origin_name": "North Concord/Martinez",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "59",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "NCON",
+      "origin_name": "North Concord/Martinez",
+      "destination": "SF Airport",
+      "minutes": "4",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "NCON",
+      "origin_name": "North Concord/Martinez",
+      "destination": "SF Airport",
+      "minutes": "12",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "NCON",
+      "origin_name": "North Concord/Martinez",
+      "destination": "SF Airport",
+      "minutes": "23",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ORIN",
+      "origin_name": "Orinda",
+      "destination": "Antioch",
+      "minutes": "6",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ORIN",
+      "origin_name": "Orinda",
+      "destination": "Antioch",
+      "minutes": "26",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ORIN",
+      "origin_name": "Orinda",
+      "destination": "Antioch",
+      "minutes": "46",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ORIN",
+      "origin_name": "Orinda",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "17",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ORIN",
+      "origin_name": "Orinda",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "37",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ORIN",
+      "origin_name": "Orinda",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "57",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ORIN",
+      "origin_name": "Orinda",
+      "destination": "SF Airport",
+      "minutes": "7",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ORIN",
+      "origin_name": "Orinda",
+      "destination": "SF Airport",
+      "minutes": "13",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ORIN",
+      "origin_name": "Orinda",
+      "destination": "SF Airport",
+      "minutes": "25",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PCTR",
+      "origin_name": "Pittsburg Center",
+      "destination": "Antioch",
+      "minutes": "5",
+      "direction": "North",
+      "platform": "1",
+      "length": "3",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PCTR",
+      "origin_name": "Pittsburg Center",
+      "destination": "Antioch",
+      "minutes": "25",
+      "direction": "North",
+      "platform": "1",
+      "length": "1",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PCTR",
+      "origin_name": "Pittsburg Center",
+      "destination": "Antioch",
+      "minutes": "45",
+      "direction": "North",
+      "platform": "1",
+      "length": "1",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PCTR",
+      "origin_name": "Pittsburg Center",
+      "destination": "SFO/Millbrae",
+      "minutes": "15",
+      "direction": "South",
+      "platform": "2",
+      "length": "1",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PCTR",
+      "origin_name": "Pittsburg Center",
+      "destination": "SFO/Millbrae",
+      "minutes": "35",
+      "direction": "South",
+      "platform": "2",
+      "length": "1",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PCTR",
+      "origin_name": "Pittsburg Center",
+      "destination": "SFO/Millbrae",
+      "minutes": "55",
+      "direction": "South",
+      "platform": "2",
+      "length": "1",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PITT",
+      "origin_name": "Pittsburg/Bay Point",
+      "destination": "Antioch",
+      "minutes": "12",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PITT",
+      "origin_name": "Pittsburg/Bay Point",
+      "destination": "Antioch",
+      "minutes": "14",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PITT",
+      "origin_name": "Pittsburg/Bay Point",
+      "destination": "Antioch",
+      "minutes": "33",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PITT",
+      "origin_name": "Pittsburg/Bay Point",
+      "destination": "SF Airport",
+      "minutes": "5",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PITT",
+      "origin_name": "Pittsburg/Bay Point",
+      "destination": "SF Airport",
+      "minutes": "17",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PITT",
+      "origin_name": "Pittsburg/Bay Point",
+      "destination": "SF Airport",
+      "minutes": "25",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PHIL",
+      "origin_name": "Pleasant Hill/Contra Costa Centre",
+      "destination": "Antioch",
+      "minutes": "Leaving",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PHIL",
+      "origin_name": "Pleasant Hill/Contra Costa Centre",
+      "destination": "Antioch",
+      "minutes": "18",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PHIL",
+      "origin_name": "Pleasant Hill/Contra Costa Centre",
+      "destination": "Antioch",
+      "minutes": "38",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PHIL",
+      "origin_name": "Pleasant Hill/Contra Costa Centre",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "9",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PHIL",
+      "origin_name": "Pleasant Hill/Contra Costa Centre",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "29",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PHIL",
+      "origin_name": "Pleasant Hill/Contra Costa Centre",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "49",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PHIL",
+      "origin_name": "Pleasant Hill/Contra Costa Centre",
+      "destination": "SF Airport",
+      "minutes": "1",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PHIL",
+      "origin_name": "Pleasant Hill/Contra Costa Centre",
+      "destination": "SF Airport",
+      "minutes": "12",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "PHIL",
+      "origin_name": "Pleasant Hill/Contra Costa Centre",
+      "destination": "SF Airport",
+      "minutes": "21",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Antioch",
+      "minutes": "17",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Antioch",
+      "minutes": "37",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Antioch",
+      "minutes": "65",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Berryessa",
+      "minutes": "14",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Berryessa",
+      "minutes": "39",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Berryessa",
+      "minutes": "54",
+      "direction": "North",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Daly City",
+      "minutes": "2",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Daly City",
+      "minutes": "11",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Daly City",
+      "minutes": "15",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "2",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "22",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "48",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Millbrae",
+      "minutes": "6",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Millbrae",
+      "minutes": "15",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Millbrae",
+      "minutes": "31",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "9",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "30",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "48",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Richmond",
+      "minutes": "7",
+      "direction": "North",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Richmond",
+      "minutes": "29",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "Richmond",
+      "minutes": "46",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "SF Airport",
+      "minutes": "10",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "SF Airport",
+      "minutes": "14",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "POWL",
+      "origin_name": "Powell St.",
+      "destination": "SF Airport",
+      "minutes": "19",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "RICH",
+      "origin_name": "Richmond",
+      "destination": "Berryessa",
+      "minutes": "3",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "RICH",
+      "origin_name": "Richmond",
+      "destination": "Berryessa",
+      "minutes": "23",
+      "direction": "South",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "RICH",
+      "origin_name": "Richmond",
+      "destination": "Berryessa",
+      "minutes": "43",
+      "direction": "South",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "RICH",
+      "origin_name": "Richmond",
+      "destination": "Millbrae",
+      "minutes": "11",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "RICH",
+      "origin_name": "Richmond",
+      "destination": "Millbrae",
+      "minutes": "31",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "ROCK",
+      "origin_name": "Rockridge",
+      "destination": "Antioch",
+      "minutes": "1",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ROCK",
+      "origin_name": "Rockridge",
+      "destination": "Antioch",
+      "minutes": "20",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ROCK",
+      "origin_name": "Rockridge",
+      "destination": "Antioch",
+      "minutes": "40",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ROCK",
+      "origin_name": "Rockridge",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "12",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ROCK",
+      "origin_name": "Rockridge",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "32",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ROCK",
+      "origin_name": "Rockridge",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "52",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ROCK",
+      "origin_name": "Rockridge",
+      "destination": "SF Airport",
+      "minutes": "12",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ROCK",
+      "origin_name": "Rockridge",
+      "destination": "SF Airport",
+      "minutes": "19",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "ROCK",
+      "origin_name": "Rockridge",
+      "destination": "SF Airport",
+      "minutes": "31",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SBRN",
+      "origin_name": "San Bruno",
+      "destination": "Antioch",
+      "minutes": "12",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SBRN",
+      "origin_name": "San Bruno",
+      "destination": "Antioch",
+      "minutes": "42",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SBRN",
+      "origin_name": "San Bruno",
+      "destination": "Millbrae",
+      "minutes": "30",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SBRN",
+      "origin_name": "San Bruno",
+      "destination": "Millbrae",
+      "minutes": "40",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SBRN",
+      "origin_name": "San Bruno",
+      "destination": "Millbrae",
+      "minutes": "57",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SBRN",
+      "origin_name": "San Bruno",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "3",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SBRN",
+      "origin_name": "San Bruno",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "23",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SBRN",
+      "origin_name": "San Bruno",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "46",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SBRN",
+      "origin_name": "San Bruno",
+      "destination": "Richmond",
+      "minutes": "3",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SBRN",
+      "origin_name": "San Bruno",
+      "destination": "Richmond",
+      "minutes": "21",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SBRN",
+      "origin_name": "San Bruno",
+      "destination": "Richmond",
+      "minutes": "41",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SBRN",
+      "origin_name": "San Bruno",
+      "destination": "SF Airport",
+      "minutes": "2",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SBRN",
+      "origin_name": "San Bruno",
+      "destination": "SF Airport",
+      "minutes": "34",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SBRN",
+      "origin_name": "San Bruno",
+      "destination": "SF Airport",
+      "minutes": "38",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SFIA",
+      "origin_name": "San Francisco International Airport (SFO)",
+      "destination": "Antioch",
+      "minutes": "8",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SFIA",
+      "origin_name": "San Francisco International Airport (SFO)",
+      "destination": "Antioch",
+      "minutes": "38",
+      "direction": "North",
+      "platform": "1",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SFIA",
+      "origin_name": "San Francisco International Airport (SFO)",
+      "destination": "Millbrae",
+      "minutes": "3",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SFIA",
+      "origin_name": "San Francisco International Airport (SFO)",
+      "destination": "Millbrae",
+      "minutes": "33",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SFIA",
+      "origin_name": "San Francisco International Airport (SFO)",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "Leaving",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SFIA",
+      "origin_name": "San Francisco International Airport (SFO)",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "19",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SFIA",
+      "origin_name": "San Francisco International Airport (SFO)",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "42",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SFIA",
+      "origin_name": "San Francisco International Airport (SFO)",
+      "destination": "Richmond",
+      "minutes": "17",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SFIA",
+      "origin_name": "San Francisco International Airport (SFO)",
+      "destination": "Richmond",
+      "minutes": "37",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SANL",
+      "origin_name": "San Leandro",
+      "destination": "Berryessa",
+      "minutes": "2",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "SANL",
+      "origin_name": "San Leandro",
+      "destination": "Berryessa",
+      "minutes": "5",
+      "direction": "South",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "SANL",
+      "origin_name": "San Leandro",
+      "destination": "Berryessa",
+      "minutes": "22",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "SANL",
+      "origin_name": "San Leandro",
+      "destination": "Daly City",
+      "minutes": "4",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "SANL",
+      "origin_name": "San Leandro",
+      "destination": "Daly City",
+      "minutes": "12",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "SANL",
+      "origin_name": "San Leandro",
+      "destination": "Daly City",
+      "minutes": "20",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "SANL",
+      "origin_name": "San Leandro",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "10",
+      "direction": "North",
+      "platform": "1",
+      "length": "10",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "SANL",
+      "origin_name": "San Leandro",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "30",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "SANL",
+      "origin_name": "San Leandro",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "50",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "SANL",
+      "origin_name": "San Leandro",
+      "destination": "Richmond",
+      "minutes": "18",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "SANL",
+      "origin_name": "San Leandro",
+      "destination": "Richmond",
+      "minutes": "37",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "SANL",
+      "origin_name": "San Leandro",
+      "destination": "Richmond",
+      "minutes": "57",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "SHAY",
+      "origin_name": "South Hayward",
+      "destination": "Berryessa",
+      "minutes": "14",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "SHAY",
+      "origin_name": "South Hayward",
+      "destination": "Berryessa",
+      "minutes": "18",
+      "direction": "South",
+      "platform": "1",
+      "length": "5",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "SHAY",
+      "origin_name": "South Hayward",
+      "destination": "Berryessa",
+      "minutes": "34",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "SHAY",
+      "origin_name": "South Hayward",
+      "destination": "Daly City",
+      "minutes": "8",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "SHAY",
+      "origin_name": "South Hayward",
+      "destination": "Daly City",
+      "minutes": "28",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "SHAY",
+      "origin_name": "South Hayward",
+      "destination": "Daly City",
+      "minutes": "48",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "SHAY",
+      "origin_name": "South Hayward",
+      "destination": "Richmond",
+      "minutes": "7",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "SHAY",
+      "origin_name": "South Hayward",
+      "destination": "Richmond",
+      "minutes": "25",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "SHAY",
+      "origin_name": "South Hayward",
+      "destination": "Richmond",
+      "minutes": "45",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "SSAN",
+      "origin_name": "South San Francisco",
+      "destination": "Antioch",
+      "minutes": "15",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SSAN",
+      "origin_name": "South San Francisco",
+      "destination": "Antioch",
+      "minutes": "45",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SSAN",
+      "origin_name": "South San Francisco",
+      "destination": "Millbrae",
+      "minutes": "27",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SSAN",
+      "origin_name": "South San Francisco",
+      "destination": "Millbrae",
+      "minutes": "36",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SSAN",
+      "origin_name": "South San Francisco",
+      "destination": "Millbrae",
+      "minutes": "53",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SSAN",
+      "origin_name": "South San Francisco",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "6",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SSAN",
+      "origin_name": "South San Francisco",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "26",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SSAN",
+      "origin_name": "South San Francisco",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "49",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SSAN",
+      "origin_name": "South San Francisco",
+      "destination": "Richmond",
+      "minutes": "7",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SSAN",
+      "origin_name": "South San Francisco",
+      "destination": "Richmond",
+      "minutes": "24",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SSAN",
+      "origin_name": "South San Francisco",
+      "destination": "Richmond",
+      "minutes": "44",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "SSAN",
+      "origin_name": "South San Francisco",
+      "destination": "SF Airport",
+      "minutes": "31",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SSAN",
+      "origin_name": "South San Francisco",
+      "destination": "SF Airport",
+      "minutes": "35",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "SSAN",
+      "origin_name": "South San Francisco",
+      "destination": "SF Airport",
+      "minutes": "40",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "UCTY",
+      "origin_name": "Union City",
+      "destination": "Berryessa",
+      "minutes": "Leaving",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "UCTY",
+      "origin_name": "Union City",
+      "destination": "Berryessa",
+      "minutes": "4",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "UCTY",
+      "origin_name": "Union City",
+      "destination": "Berryessa",
+      "minutes": "20",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "UCTY",
+      "origin_name": "Union City",
+      "destination": "Daly City",
+      "minutes": "3",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "UCTY",
+      "origin_name": "Union City",
+      "destination": "Daly City",
+      "minutes": "23",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "UCTY",
+      "origin_name": "Union City",
+      "destination": "Daly City",
+      "minutes": "43",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "UCTY",
+      "origin_name": "Union City",
+      "destination": "Richmond",
+      "minutes": "2",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "UCTY",
+      "origin_name": "Union City",
+      "destination": "Richmond",
+      "minutes": "20",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "UCTY",
+      "origin_name": "Union City",
+      "destination": "Richmond",
+      "minutes": "40",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "WCRK",
+      "origin_name": "Walnut Creek",
+      "destination": "Antioch",
+      "minutes": "16",
+      "direction": "North",
+      "platform": "1",
+      "length": "5",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WCRK",
+      "origin_name": "Walnut Creek",
+      "destination": "Antioch",
+      "minutes": "35",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WCRK",
+      "origin_name": "Walnut Creek",
+      "destination": "Antioch",
+      "minutes": "55",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WCRK",
+      "origin_name": "Walnut Creek",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "7",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WCRK",
+      "origin_name": "Walnut Creek",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "27",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WCRK",
+      "origin_name": "Walnut Creek",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "47",
+      "direction": "North",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WCRK",
+      "origin_name": "Walnut Creek",
+      "destination": "SF Airport",
+      "minutes": "4",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WCRK",
+      "origin_name": "Walnut Creek",
+      "destination": "SF Airport",
+      "minutes": "15",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WCRK",
+      "origin_name": "Walnut Creek",
+      "destination": "SF Airport",
+      "minutes": "24",
+      "direction": "South",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WARM",
+      "origin_name": "Warm Springs/South Fremont",
+      "destination": "Berryessa",
+      "minutes": "10",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "WARM",
+      "origin_name": "Warm Springs/South Fremont",
+      "destination": "Berryessa",
+      "minutes": "14",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "WARM",
+      "origin_name": "Warm Springs/South Fremont",
+      "destination": "Berryessa",
+      "minutes": "30",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "WARM",
+      "origin_name": "Warm Springs/South Fremont",
+      "destination": "Daly City",
+      "minutes": "13",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "WARM",
+      "origin_name": "Warm Springs/South Fremont",
+      "destination": "Daly City",
+      "minutes": "33",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "WARM",
+      "origin_name": "Warm Springs/South Fremont",
+      "destination": "Daly City",
+      "minutes": "53",
+      "direction": "South",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "WARM",
+      "origin_name": "Warm Springs/South Fremont",
+      "destination": "Richmond",
+      "minutes": "9",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "WARM",
+      "origin_name": "Warm Springs/South Fremont",
+      "destination": "Richmond",
+      "minutes": "29",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "WARM",
+      "origin_name": "Warm Springs/South Fremont",
+      "destination": "Richmond",
+      "minutes": "49",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#ff9933"
+    },
+    {
+      "origin_code": "WDUB",
+      "origin_name": "West Dublin/Pleasanton",
+      "destination": "Daly City",
+      "minutes": "13",
+      "direction": "South",
+      "platform": "2",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "WDUB",
+      "origin_name": "West Dublin/Pleasanton",
+      "destination": "Daly City",
+      "minutes": "33",
+      "direction": "South",
+      "platform": "2",
+      "length": "10",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "WDUB",
+      "origin_name": "West Dublin/Pleasanton",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "10",
+      "direction": "North",
+      "platform": "1",
+      "length": "10",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "WDUB",
+      "origin_name": "West Dublin/Pleasanton",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "28",
+      "direction": "North",
+      "platform": "1",
+      "length": "10",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "WDUB",
+      "origin_name": "West Dublin/Pleasanton",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "48",
+      "direction": "North",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Antioch",
+      "minutes": "9",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Antioch",
+      "minutes": "27",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Antioch",
+      "minutes": "47",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Berryessa",
+      "minutes": "7",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Berryessa",
+      "minutes": "25",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Berryessa",
+      "minutes": "49",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Daly City",
+      "minutes": "1",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Daly City",
+      "minutes": "5",
+      "direction": "South",
+      "platform": "1",
+      "length": "6",
+      "color": "#339933"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Daly City",
+      "minutes": "10",
+      "direction": "South",
+      "platform": "1",
+      "length": "8",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "13",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "33",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Dublin/Pleasanton",
+      "minutes": "58",
+      "direction": "North",
+      "platform": "2",
+      "length": "6",
+      "color": "#0099cc"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Millbrae",
+      "minutes": "6",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Millbrae",
+      "minutes": "21",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Millbrae",
+      "minutes": "41",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "1",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "20",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Pittsburg/Bay Point",
+      "minutes": "39",
+      "direction": "North",
+      "platform": "2",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Richmond",
+      "minutes": "17",
+      "direction": "North",
+      "platform": "2",
+      "length": "5",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Richmond",
+      "minutes": "39",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "Richmond",
+      "minutes": "56",
+      "direction": "North",
+      "platform": "2",
+      "length": "10",
+      "color": "#ff0000"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "SF Airport",
+      "minutes": "Leaving",
+      "direction": "South",
+      "platform": "1",
+      "length": "10",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "SF Airport",
+      "minutes": "4",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    },
+    {
+      "origin_code": "WOAK",
+      "origin_name": "West Oakland",
+      "destination": "SF Airport",
+      "minutes": "7",
+      "direction": "South",
+      "platform": "1",
+      "length": "9",
+      "color": "#ffff33"
+    }
+  ]
+}

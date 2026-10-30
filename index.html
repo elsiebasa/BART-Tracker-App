@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#14232a">
+  <title>BART departures (unofficial)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@450;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --page: #f2f3f1;
+      --ink: #14232a;
+      --slate: #5b6b70;
+      --rule: #cfd5d4;
+      --paper: #ffffff;
+      --orange: #c4421a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Archivo", system-ui, sans-serif;
+      font-weight: 450;
+      color: var(--ink);
+      background: var(--page);
+    }
+
+    .inner {
+      max-width: 640px;
+      margin: 0 auto;
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    /* ---------- Photo header ---------- */
+    .hero {
+      position: relative;
+      height: 300px;
+      overflow: hidden;
+      background: linear-gradient(180deg, #c9d3d3 0, #8fa5ab 100%);
+    }
+
+    .hero img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(8, 18, 24, .8) 0, rgba(8, 18, 24, 0) 65%);
+      pointer-events: none;
+    }
+
+    .hero-text {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 22px;
+      z-index: 1;
+      color: #fff;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 1.02;
+      letter-spacing: -0.02em;
+    }
+
+    .disclaimer {
+      margin: 8px 0 0;
+      font-size: 15px;
+      font-weight: 600;
+      opacity: .92;
+    }
+
+    /* ---------- Controls ---------- */
+    main { padding-top: 26px; padding-bottom: 56px; }
+
+    .controls {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 14px;
+    }
+
+    @media (max-width: 520px) {
+      .controls { grid-template-columns: 1fr; }
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    select {
+      width: 100%;
+      appearance: none;
+      font: inherit;
+      font-weight: 600;
+      color: var(--ink);
+      background-color: var(--paper);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%2314232a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      border: 1.5px solid var(--ink);
+      border-radius: 4px;
+      padding: 12px 40px 12px 14px;
+      cursor: pointer;
+    }
+
+    select:disabled { opacity: .55; cursor: default; }
+
+    select:focus-visible,
+    a:focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 2px;
+    }
+
+    .status {
+      margin: 12px 0 18px;
+      font-size: 14px;
+      color: var(--slate);
+      min-height: 1.4em;
+    }
+
+    /* ---------- Departures ---------- */
+    #train-container { border-top: 2px solid var(--ink); }
+
+    .row {
+      display: grid;
+      grid-template-columns: 6px 1fr auto;
+      align-items: stretch;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .stripe { background: var(--slate); }
+
+    .info { padding: 14px 16px; min-width: 0; }
+
+    .dest {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.15;
+    }
+
+    .meta {
+      margin: 3px 0 0;
+      font-size: 14px;
+      color: var(--slate);
+    }
+
+    .eta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      min-width: 84px;
+      padding: 12px 2px 12px 8px;
+      text-align: right;
+    }
+
+    .eta .num {
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .eta .unit {
+      margin-top: 2px;
+      font-size: 13px;
+      color: var(--slate);
+    }
+
+    .eta.now .num { font-size: 26px; color: var(--orange); }
+    .eta.unknown .num { font-size: 20px; color: var(--slate); }
+
+    .message {
+      margin: 0;
+      padding: 26px 0;
+      font-size: 17px;
+      line-height: 1.45;
+      color: var(--slate);
+    }
+
+    .message.error { color: #8a2410; }
+
+    /* ---------- Map + footer ---------- */
+    .map { margin-top: 38px; }
+
+    .map h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .map a {
+      display: block;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+    }
+
+    .map img { display: block; width: 100%; height: auto; }
+
+    .map p {
+      margin: 8px 0 0;
+      font-size: 13px;
+      color: var(--slate);
+    }
+
+    footer {
+      margin-top: 32px;
+      padding-top: 18px;
+      border-top: 1px solid var(--rule);
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--slate);
+      max-width: 52ch;
+    }
+
+    footer p { margin: 0 0 10px; }
+    footer a { color: var(--ink); font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <img id="hero-img" src="sf.jpg" alt="The Golden Gate Bridge in San Francisco">
+    //https://unsplash.com/photos/golden-gate-bridge-during-daytime-gZXx8lKAb7Y
+    <div class="hero-text">
+      <div class="inner">
+        <h1>BART Departures</h1>
+        <p class="disclaimer">Unofficial. Not affiliated with Bay Area Rapid Transit (BART).</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="inner">
+    <div class="controls">
+      <div>
+        <label for="station-picker">Station</label>
+        <select id="station-picker" disabled>
+          <option value="">Loading stations…</option>
+        </select>
+      </div>
+      <div>
+        <label for="direction-picker">Direction</label>
+        <select id="direction-picker">
+          <option value="ALL">Both ways</option>
+          <option value="North">Northbound</option>
+          <option value="South">Southbound</option>
+        </select>
+      </div>
+    </div>
+
+    <p id="refresh-status" class="status" aria-live="polite">Checking the tracks…</p>
+
+    <section id="train-container" aria-live="polite" aria-busy="true">
+      <p class="message">Loading train estimates…</p>
+    </section>
+
+    <section class="map">
+      <h2>System map</h2>
+      <a href="map.png" target="_blank" rel="noopener noreferrer">
+        <img src="map.png" alt="BART system map showing all lines and stations" loading="lazy">
+      </a>
+      <p>Map courtesy of BART. Tap it to open full size.</p>
+    </section>
+
+    <footer>
+      <p>Times are estimates pulled from BART's public data about every 5 minutes, so a train can show up a little early or late. Last data update: <span id="update-time">loading…</span></p>
+      <p>Hella useful, not official. Check <a href="https://www.bart.gov" target="_blank" rel="noopener noreferrer">bart.gov</a> for service alerts.</p>
+      <a class="underline hover:text-slate-300" href="https://www.bart.gov/schedules/developers/api" target="_blank" rel="noopener noreferrer">BART API information</a>
+
+    </footer>
+  </main>
+
+  <script>
+    "use strict";
+
+    // Header photo
+  
+    const heroImage = document.getElementById("hero-img");
+    heroImage.addEventListener("error", () => {
+      if (!heroImage.dataset.retried) {
+        heroImage.dataset.retried = "1";
+        heroImage.src = "sf.jpg";
+      } else {
+        heroImage.remove();
+      }
+    });
+
+    let db = { metadata: {}, stations: [], trains: [] };
+    let hasLoadedData = false;
+
+    const stationPicker = document.getElementById("station-picker");
+    const directionPicker = document.getElementById("direction-picker");
+    const trainContainer = document.getElementById("train-container");
+    const updateTimeLabel = document.getElementById("update-time");
+    const refreshStatus = document.getElementById("refresh-status");
+
+    // Remember the last station on this device (optional nicety).
+    let savedStation = "";
+    try { savedStation = localStorage.getItem("bart-board-station") || ""; } catch (e) {}
+
+    function addText(parent, tag, text, className = "") {
+      const element = document.createElement(tag);
+      element.textContent = String(text ?? "");
+      if (className) element.className = className;
+      parent.appendChild(element);
+      return element;
+    }
+
+    function showMessage(message, isError = false) {
+      trainContainer.replaceChildren();
+      addText(trainContainer, "p", message, isError ? "message error" : "message");
+    }
+
+    // "2026-10-30 18:35:02 UTC" -> local time like "11:35 AM"
+    function formatUpdated(value) {
+      if (!value) return "unknown";
+      const parsed = new Date(String(value).replace(" UTC", "Z").replace(" ", "T"));
+      return Number.isNaN(parsed.getTime())
+        ? String(value)
+        : parsed.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+    }
+
+    // The pipeline writes public/bart_data.json. Try both paths so this page
+    // works whether the site is served from the repository root or public/.
+    async function fetchPublishedData() {
+      const paths = ["./bart_data.json", "./public/bart_data.json"];
+      let lastError = null;
+
+      for (const path of paths) {
+        try {
+          const response = await fetch(`${path}?t=${Date.now()}`, { cache: "no-store" });
+          if (!response.ok) {
+            throw new Error(`${path} returned HTTP ${response.status}`);
+          }
+
+          const nextDb = await response.json();
+          if (!nextDb || !Array.isArray(nextDb.stations) || !Array.isArray(nextDb.trains)) {
+            throw new Error(`${path} does not contain the expected stations and trains arrays`);
+          }
+
+          return nextDb;
+        } catch (error) {
+          lastError = error;
+        }
+      }
+
+      throw lastError || new Error("Could not find the BART data JSON file.");
+    }
+
+    function populateStationPicker(stations) {
+      const previousStation = stationPicker.value || savedStation;
+      const validStations = stations
+        .filter(station => station && station.code && station.name)
+        .sort((a, b) => String(a.name).localeCompare(String(b.name)));
+
+      stationPicker.replaceChildren();
+      stationPicker.appendChild(new Option("Pick a station…", ""));
+
+      for (const station of validStations) {
+        stationPicker.appendChild(new Option(station.name, station.code));
+      }
+
+      stationPicker.value = validStations.some(station => station.code === previousStation)
+        ? previousStation
+        : "";
+      stationPicker.disabled = validStations.length === 0;
+    }
+
+    async function initData() {
+      try {
+        const nextDb = await fetchPublishedData();
+        if (!nextDb.stations.some(station => station && station.code && station.name)) {
+          throw new Error("The JSON file does not contain any valid stations.");
+        }
+
+        db = {
+          metadata: nextDb.metadata || {},
+          stations: nextDb.stations,
+          trains: nextDb.trains.filter(train => train && train.origin_code)
+        };
+        hasLoadedData = true;
+
+        const updated = formatUpdated(db.metadata.last_updated);
+        updateTimeLabel.textContent = updated;
+        populateStationPicker(db.stations);
+        renderDashboard();
+
+        refreshStatus.textContent = `Updated ${updated}`;
+      } catch (error) {
+        console.error("Unable to load BART data:", error);
+        refreshStatus.textContent = hasLoadedData
+          ? "Couldn't refresh just now. Showing the last data we got."
+          : "";
+
+        if (!hasLoadedData) {
+          stationPicker.disabled = true;
+          stationPicker.replaceChildren(new Option("Stations unavailable", ""));
+          showMessage("Couldn't load train data. Try again in a minute.", true);
+        }
+      } finally {
+        trainContainer.setAttribute("aria-busy", "false");
+      }
+    }
+
+    function directionMatches(trainDirection, selectedDirection) {
+      if (selectedDirection === "ALL") return true;
+      const direction = String(trainDirection || "").toLowerCase();
+      return direction.startsWith(selectedDirection.toLowerCase());
+    }
+
+    function minutesRank(value) {
+      const normalized = String(value ?? "").trim().toLowerCase();
+      if (normalized === "leaving") return -1;
+      const numeric = Number(normalized);
+      return normalized !== "" && Number.isFinite(numeric) ? numeric : Number.MAX_SAFE_INTEGER;
+    }
+
+    function describeDirection(value) {
+      const direction = String(value || "").trim();
+      return /^(north|south|east|west)$/i.test(direction)
+        ? `${direction.toLowerCase()}bound`
+        : direction.toLowerCase();
+    }
+
+    function renderDashboard() {
+      if (!hasLoadedData) return;
+
+      const selectedStation = stationPicker.value;
+      const selectedDirection = directionPicker.value;
+      trainContainer.replaceChildren();
+
+      if (!selectedStation) {
+        showMessage("Pick a station to see departures.");
+        return;
+      }
+
+      const trains = db.trains
+        .filter(train =>
+          String(train.origin_code) === selectedStation &&
+          directionMatches(train.direction, selectedDirection)
+        )
+        .sort((a, b) => minutesRank(a.minutes) - minutesRank(b.minutes));
+
+      if (trains.length === 0) {
+        showMessage("No trains listed for this station and direction right now. Try the other direction, or check back in a minute.");
+        return;
+      }
+
+      for (const train of trains) {
+        const row = document.createElement("article");
+        row.className = "row";
+
+        const stripe = document.createElement("div");
+        stripe.className = "stripe";
+        if (/^#[0-9a-f]{6}$/i.test(String(train.color || ""))) {
+          stripe.style.backgroundColor = train.color;
+        }
+        stripe.setAttribute("aria-hidden", "true");
+
+        const info = document.createElement("div");
+        info.className = "info";
+        addText(info, "h3", train.destination || "Unknown destination", "dest");
+
+        const platform = train.platform || "N/A";
+        const length = train.length || "N/A";
+        const bits = [`Platform ${platform}`];
+        if (length !== "N/A") bits.push(`${length} cars`);
+        const dir = describeDirection(train.direction);
+        if (dir) bits.push(dir);
+        addText(info, "p", bits.join(", "), "meta");
+
+        const eta = document.createElement("div");
+        const minutes = String(train.minutes ?? "Unknown");
+        const lowered = minutes.toLowerCase();
+        if (lowered === "leaving") {
+          eta.className = "eta now";
+          addText(eta, "span", "Now", "num");
+          addText(eta, "span", "leaving", "unit");
+        } else if (lowered === "unknown" || minutes === "") {
+          eta.className = "eta unknown";
+          addText(eta, "span", "No ETA", "num");
+        } else {
+          eta.className = "eta";
+          addText(eta, "span", minutes, "num");
+          addText(eta, "span", "min", "unit");
+        }
+
+        row.append(stripe, info, eta);
+        trainContainer.appendChild(row);
+      }
+    }
+
+    stationPicker.addEventListener("change", () => {
+      try { localStorage.setItem("bart-board-station", stationPicker.value); } catch (e) {}
+      renderDashboard();
+    });
+    directionPicker.addEventListener("change", renderDashboard);
+
+    initData();
+    // Recheck for a newly published JSON file every minute.
+    setInterval(initData, 60_000);
+  </script>
+</body>
+</html>
